@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Notebook">
+  <meta name="author" content="Jan Łyczakowski">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam:wght@300;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+  <title>Notebook</title>
+</head>
+
+<body>
+  <div class="editor">
+    <div class="editor-content">
+      <input class="editor-title" placeholder="Title" type="text" id="editor-title">
+      <input class="editor-text" placeholder="Take a note..." type="text" id="editor-text">
+      <div class="editor-buttons">
+        <button class="editor-close-btn primary-btn">Close</button>
+      </div>
+    </div>
+  </div>
+  <main>
+    <header>
+      <img class="notebook-logo" src="notebook_logo_medium.png" alt="icon of notebook - made by Freepik">
+      <h1 class="notebook-title">Notebook</h1>
+    </header>
+    <div class="form-container">
+      <form class="form" action="#" autocomplete="off">
+        <input class="note-title" type="text" id="note-title" placeholder="Title">
+        <input class="note-text" type="text" id="note-text" placeholder="Take a note...">
+        <div class=form-buttons>
+          <button class="primary-btn submit-btn" type="submit">Submit</button>
+          <button class="primary-btn close-form-btn" type="button">Close</button>
+        </div>
+      </form>
+    </div>
+    <div class="notes">
+    </div>
+    <div class='placeholder'>
+      <img class="placeholder-logo" alt="Funny dinosaur" src="funny_dinosaur.jpg">
+      <p class="placeholder-text">Add your very first note</p>
+    </div>
+    <div class="color-tooltip">
+      <div class="color-option" data-color="#ff9c23" id="orange"></div>
+      <div class="color-option" data-color="#ffc72ecb" id="yellow"></div>
+      <div class="color-option" data-color="#fff" id="white"></div>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+
+</html>
